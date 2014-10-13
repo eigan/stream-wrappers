@@ -15,7 +15,9 @@
 - Install mjpeg_streamer and connect camera
 - Download this project
 - Test camera by running ./stream.sh
-- If everything OK, stop stream and add this to /etc/rc.d : <path-to-scripts/stream.sh>
+- If everything OK, stop stream and add this to /etc/rc.d
+
+    path-to-scripts/stream.sh
 
 
 ### On recording server
@@ -26,4 +28,4 @@
 - After stream is up, run capture.sh
 - This is my cron config:
 
-    */30 0,1,2,21,22,23 * * * pgrep ffmpeg > /dev/null || <Path-to-project>/record.sh >/dev/null 2>&1
+    */30 0,1,2,21,22,23 * * * pgrep ffmpeg > /dev/null || path-to-project/record.sh >/dev/null 2>&1
