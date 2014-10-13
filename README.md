@@ -18,7 +18,7 @@
 - If everything OK, stop stream and add this to /etc/rc.d
 
 ```
-    path-to-scripts/stream.sh
+path-to-scripts/stream.sh
 ```
 - This will initialize the stream on boot
 
@@ -31,6 +31,6 @@
 - This is my cron config to force server to capture at specific times:
 
 ```bash
-    # pgrep makes sure the script is not initialized if ffmpeg is running
-    */30 0,1,2,21,22,23 * * * pgrep ffmpeg > /dev/null || path-to-project/record.sh >/dev/null 2>&1
+# pgrep makes sure the script is not initialized if ffmpeg is running
+*/30 0,1,2,21,22,23 * * * pgrep ffmpeg > /dev/null || path-to-project/record.sh >/dev/null 2>&1
 ```
