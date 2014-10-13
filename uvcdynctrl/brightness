@@ -1,0 +1,7 @@
+if [ -z "$1" ]
+  then
+    uvcdynctrl -g "Brightness"
+    exit 0
+fi
+
+uvcdynctrl -s "Brightness" $1

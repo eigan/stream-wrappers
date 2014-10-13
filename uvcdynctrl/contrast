@@ -1,0 +1,7 @@
+if [ -z "$1" ]
+  then
+    uvcdynctrl -g "Contrast"
+    exit 0
+fi
+
+uvcdynctrl -s "Contrast" $1

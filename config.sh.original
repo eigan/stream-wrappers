@@ -1,0 +1,17 @@
+# -- Configuration --
+host="http://192.168.0.120"
+
+stream_fps="30"
+stream_resolution="1280x720"
+stream_port="8080"
+stream_format="mjpeg"
+stream_url="$host/?action=stream"
+stream_path=$( cd "$(dirname "$0")" ; pwd -P )/www
+
+output_folder=$(date +%Y/%m/%d)
+output_segments_length="3600" # seconds
+output_bitrate="512k"
+output_prefix="video"
+output_vcodec="mpeg4"
+
+fontfile="/Library/Fonts/Arial Black.ttf"

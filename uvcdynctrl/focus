@@ -1,0 +1,8 @@
+if [ -z "$1" ]
+  then
+    uvcdynctrl -g "Focus (absolute)"
+    exit 0
+fi
+
+uvcdynctrl -s "Focus, Auto" 0
+uvcdynctrl -s "Focus (absolute)" $1

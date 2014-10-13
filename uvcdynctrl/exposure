@@ -1,0 +1,9 @@
+if [ -z "$1" ]
+  then
+    uvcdynctrl -g "Exposure (Absolute)"
+    exit 0
+fi
+
+uvcdynctrl -s "Exposure, Auto Priority" 0
+uvcdynctrl -s "Exposure, Auto" 1
+uvcdynctrl -s "Exposure (Absolute)" $1

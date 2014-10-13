@@ -1,0 +1,7 @@
+if [ -z "$1" ]
+  then
+    uvcdynctrl -g "Sharpness"
+    exit 0
+fi
+
+uvcdynctrl -s "Sharpness" $1
