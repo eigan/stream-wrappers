@@ -5,7 +5,7 @@ stream_fps="30"
 stream_resolution="1280x720"
 stream_port="8080"
 stream_format="mjpeg"
-stream_url="$host/?action=stream"
+stream_url="$host:$stream_port/?action=stream"
 stream_path=$( cd "$(dirname "$0")" ; pwd -P )/www
 
 output_folder=$(date +%Y/%m/%d)
